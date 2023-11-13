@@ -1,0 +1,54 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+div#section_author {
+    background-color: brown;
+    display: none;
+}
+
+div.section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: center;
+    flex: 2;
+    flex-shrink: 1;
+}
+div#section_data {
+    background-color: blueviolet;
+}
+
+div#data_types {
+    display: flex;
+}
+div.data_type {
+    display: flex;
+    flex-direction: column;
+}
+
+div.data_type button {
+    width: 100px;
+}
+div#section_internet {
+    background-color: aqua;
+    display: none;
+
+}
+
+table, td, tr, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    word-break: break-all;
+    
+}
