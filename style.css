@@ -12,6 +12,16 @@ body {
     width: 100vw;
 }
 
+nav {
+    font-size: 25px;
+    max-height: 100px;
+    display: flex;
+}
+img.brand_image_size {
+    width: 50px;
+    cursor: pointer;
+    
+}
 div#section_author {
     background-color: brown;
     display: none;
@@ -26,7 +36,8 @@ div.section {
     flex-shrink: 1;
 }
 div#section_data {
-    background-color: blueviolet;
+    background-color: rgb(100, 100, 100);
+    color: rgba(255, 255, 255);
 }
 
 div#data_types {
