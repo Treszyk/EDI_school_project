@@ -17,8 +17,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <button id="btn_data" class="nav_button" href="#">Data</button>
-              <button id="btn_author"class="nav_button" href="#">Author</button>
+              <button id="btn_data" class="nav_button selected" href="#">Dane</button>
+              <button id="btn_author"class="nav_button" href="#">Autor</button>
               <button id="btn_internet" class="nav_button" href="#">Internet</button>
             </div>
           </div>
@@ -33,9 +33,9 @@
         <h2>moje najwiekse hobby to miedzy innymi programowanie, granie w gry komputerowe i jazda na rowerze</h2>
     </div>
     <div id="section_data" class="container-fluid section">
-        <h1>Dane</h1>
-        <h2>Wygenerowane dane dotycza procesorów i informacji. Struktura danych w tabeli ponizej:</h2>
-            <table id="data_structure" class="table table-dark table-bordered dark">
+        <h1><span class="highlighted">Dane:</span></h1>
+        <h2>Wygenerowane dane dotycza <span class="highlighted">procesorów</span> i informacji o nich takich jak m.in ich <span class="highlighted">koszt</span>, <span class="highlighted">producent</span>, <span class="highlighted">ilość rdzeni</span>, <span class="highlighted">data premiery</span> czy informacja o <span class="highlighted">przecenie</span>. Struktura danych w tabeli ponizej:</h2>
+        <table id="data_structure" class="table table-dark table-bordered dark">
             <tr>
                 <th>processor_model</th>
                 <th>manufacturer</th>
@@ -61,21 +61,164 @@
                 <td>boolean</td>
             </tr>
         </table>
+        <h2><span class="highlighted">Dziesięć</span> pierwszych wierszy <span class="highlighted">wygenerowanych</span> danych: </h2>
+        <table id="first_ten" class="table table-dark table-bordered dark">
+          <tbody>
+            <tr>
+                <th>processor_model</th>
+                <th>manufacturer</th>
+                <th>socket_type</th>
+                <th>core_count</th>
+                <th>clock_speed</th>
+                <th>power_consumption</th>
+                <th>price</th>
+                <th>release_date</th>
+                <th>architecture</th>
+                <th>is_discontinued</th>
+            </tr>
+            <tr>
+              <td>i7</td>
+              <td>Intel</td>
+              <td>LGA1151</td>
+              <td>12</td>
+              <td>1.78</td>
+              <td>57</td>
+              <td>772.73 zł</td>
+              <td>12/12/2012</td>
+              <td>x86</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>Ryzen 5</td>
+              <td>Intel</td>
+              <td>LGA1151</td>
+              <td>16</td>
+              <td>3.45</td>
+              <td>129</td>
+              <td>59.45 zł</td>
+              <td>2/19/2015</td>
+              <td>x86-64</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>i3</td>
+              <td>AMD</td>
+              <td>LGA1151</td>
+              <td>3</td>
+              <td>1.81</td>
+              <td>102</td>
+              <td>279.73 zł</td>
+              <td>4/14/2018</td>
+              <td>x86-64</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>i5</td>
+              <td>Intel</td>
+              <td>LGA1151</td>
+              <td>5</td>
+              <td>4.77</td>
+              <td>172</td>
+              <td>738.88 zł</td>
+              <td>2/24/2022</td>
+              <td>x86-64</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>Ryzen 5</td>
+              <td>Intel</td>
+              <td>LGA1151</td>
+              <td>12</td>
+              <td>4.78</td>
+              <td>25</td>
+              <td>64.92 zł</td>
+              <td>4/18/2011</td>
+              <td>x86-64</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>Ryzen 7</td>
+              <td>Intel</td>
+              <td>AM4</td>
+              <td>2</td>
+              <td>1.87</td>
+              <td>48</td>
+              <td>393.43 zł</td>
+              <td>7/29/2020</td>
+              <td>x86</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>i3</td>
+              <td>Intel</td>
+              <td>LGA1151</td>
+              <td>4</td>
+              <td>1.33</td>
+              <td>20</td>
+              <td>231.25 zł</td>
+              <td>10/24/2021</td>
+              <td>x86</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>Ryzen 7</td>
+              <td>AMD</td>
+              <td>LGA1151</td>
+              <td>9</td>
+              <td>2.09</td>
+              <td>190</td>
+              <td>807.72 zł</td>
+              <td>5/22/2021</td>
+              <td>x86-64</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>Ryzen 5</td>
+              <td>Intel</td>
+              <td>LGA1151</td>
+              <td>12</td>
+              <td>1.81</td>
+              <td>106</td>
+              <td>665.7 zł</td>
+              <td>1/26/2020</td>
+              <td>x86-64</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>Ryzen 7</td>
+              <td>AMD</td>
+              <td>AM4</td>
+              <td>13</td>
+              <td>3.09</td>
+              <td>196</td>
+              <td>225.98 zł</td>
+              <td>8/6/2018</td>
+              <td>x86</td>
+              <td>false</td>
+            </tr>
+          </tbody>
+        </table>
         <div id="data_types" class="">
               <div class="col data_desc">
-                <h1>CSV</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed tempor dui, a pulvinar augue. Morbi vehicula feugiat justo nec tempus. Donec mauris ipsum, eleifend dapibus lacus at, vestibulum ultrices urna. Sed in dolor a nunc venenatis porta vel ut lectus. Proin lacus turpis, laoreet vel urna sit amet, ultricies gravida enim. Proin commodo tempus dui, sed maximus ipsum pharetra in. Cras purus arcu, pharetra ac eros at, fermentum porttitor ligula. Ut luctus malesuada accumsan. Integer sollicitudin commodo elit. Vestibulum mollis ex eros, vitae gravida justo blandit ac. Proin in tortor neque.</span>
-                <button class="btn btn-secondary">Pokaz Dane</button>
+                <div>
+                  <h1>CSV</h1>
+                  <span>CSV (comma-separated values) jest to typ pliku tekstowego, który zawiera dane rozdzielone seperatorami(bardzo często jest to po prostu przecinek). Pliki o tym rozszerzeniu są często używane do transferu danych z jednego programu do drugiego np. import danych między bazami danych, a arkuszami kalkulacyjnymi w excelu. Dane przechowywane są jako zwykły tekst gdzie każda pojedyńcza linia oznacza kolejny rekord tabeli.</span>
+                </div>
+                <a class="btn btn-secondary" href="./MOCK_DATA.csv" target="_blank">Pokaz Dane</a>
               </div>
               <div class="col data_desc">
-                <h1>XML</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed tempor dui, a pulvinar augue. Morbi vehicula feugiat justo nec tempus. Donec mauris ipsum, eleifend dapibus lacus at, vestibulum ultrices urna. Sed in dolor a nunc venenatis porta vel ut lectus. Proin lacus turpis, laoreet vel urna sit amet, ultricies gravida enim. Proin commodo tempus dui, sed maximus ipsum pharetra in. Cras purus arcu, pharetra ac eros at, fermentum porttitor ligula. Ut luctus malesuada accumsan. Integer sollicitudin commodo elit. Vestibulum mollis ex eros, vitae gravida justo blandit ac. Proin in tortor neque.</span>
-                <button class="btn btn-secondary">Pokaz Dane</button>
+                <div>
+                  <h1>XML</h1>
+                  <span>XML (Extensible Markup Language) jest to format tekstowy, który pozwana na zapisywanie danych w postaci, która jest łatwa do odczytu zarówno przez maszyny jak i przez ludzi. Dokument XML składa się z zagnieżdżonych elementów. Są one zapisywane jako znaczniki. Dzięki swojej dobrze zdefiniowanej strukturze i ogromnym zestawie narzędzi dokumenty XML są bardzo popularne co przekłada się na ich użyteczność np. przy wymianie informacji między programami.</span>
+                </div>
+                <a class="btn btn-secondary" href="./MOCK_DATA.xml" target="_blank">Pokaz Dane</a>
               </div>
               <div class="col data_desc">
-                <h1>JSON</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed tempor dui, a pulvinar augue. Morbi vehicula feugiat justo nec tempus. Donec mauris ipsum, eleifend dapibus lacus at, vestibulum ultrices urna. Sed in dolor a nunc venenatis porta vel ut lectus. Proin lacus turpis, laoreet vel urna sit amet, ultricies gravida enim. Proin commodo tempus dui, sed maximus ipsum pharetra in. Cras purus arcu, pharetra ac eros at, fermentum porttitor ligula. Ut luctus malesuada accumsan. Integer sollicitudin commodo elit. Vestibulum mollis ex eros, vitae gravida justo blandit ac. Proin in tortor neque.</span>
-                <button class="btn btn-secondary">Pokaz Dane</button>
+                <div>
+                  <h1>JSON</h1>
+                  <span>JSON (JavaScript Object Notation) to otwarty standardowy format plików do udostępniania danych, który wykorzystuje tekst czytelny dla człowieka do przechowywania i przesyłania danych. Pliki JSON są przechowywane z rozszerzeniem .json. JSON wymaga mniej formatowania i jest dobrą alternatywą dla XML. JSON wywodzi się z języka JavaScript, ale jest formatem danych niezależnym od języka. Generowanie i parsowanie JSON jest obsługiwane przez wiele współczesnych języków programowania.</span>
+                </div>
+                <a class="btn btn-secondary" href="./MOCK_DATA.json" target="_blank">Pokaz Dane</a>
             </div>
           </div>
 

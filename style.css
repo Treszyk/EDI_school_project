@@ -56,8 +56,12 @@ div.section {
 div#section_data {
     background-color: #222629;
     color: rgba(255, 255, 255);
+    text-align: center;
 }
 
+span.highlighted { 
+    color:#9645ff;
+}
 div#data_types {
     display: flex;
     justify-content: space-between;
@@ -65,6 +69,7 @@ div#data_types {
 .data_desc {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     transition:0.5s ease-in-out;
     color: #a0a0a0;
     gap: 10px;
@@ -75,13 +80,13 @@ div#data_types {
 -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
 box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
 }
-.data_desc button, h1, span {
+.data_desc a, h1, span {
     transition: 0.5s ease-in-out;
 }
 .data_desc:hover {
     transform: scale(1.025);
 }
-.data_desc:hover button {
+.data_desc:hover a {
     background-color: #9645ff;
     border-color: #9645ff;
 }
@@ -99,8 +104,21 @@ div#section_internet {
 }
 
 table, td, tr, th {
+    transition: 0.5s ease-in-out;
     border: 1px solid black;
     border-collapse: collapse;
     word-break: break-all;
     
+}
+
+table#first_ten, table#data_structure {
+    --bs-table-color: #a0a0a0;
+}
+
+table#first_ten tr:hover {
+    --bs-table-color: #9645ff;
+}
+
+table#data_structure tr:hover {
+    --bs-table-color: #9645ff;
 }
