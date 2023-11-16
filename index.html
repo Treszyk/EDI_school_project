@@ -25,12 +25,16 @@
         </div>
       </nav>
     <div id="section_author" class="container-fluid section">
-        <h1></h1>
-        <h2>tu jakies zdjecie + Studiuje informatyke stosowana na </h2>
-        <h2>o wyborze wlasnie tego kierunku studiow zdecydowaly moje zainteresowania + tu jakies zdjecie</h2>
-        <h2>tu jakies zdjecie? + mam nadzieje ze na studiach naucze sie jak programowac i jak korzystac z narzedzi programistycznych</h2>
-        <h2>chcialbym pracowac jako programista i mam nadzieje ze studia mi w tym pomoga</h2>
-        <h2>moje najwiekse hobby to miedzy innymi programowanie, granie w gry komputerowe i jazda na rowerze</h2>
+        <h1><span class="highlighted">Patryk Sowiński</span></h1>
+        <div class="info_holder">
+          <div class="container-fluid box_container"><p>Studiuje <span class="highlighted">Informatyke Stosowaną</span> na <span class="highlighted">Uniwersytecie Ekonomicznych w Krakowie</span></p><img src="UEK.jpg"></div>
+          <div class="container-fluid box_container"><p>O wyborze wlasnie tego kierunku studiow zdecydowalo moje zainteresowanie <span class="highlighted">informatyką</span> i <span class="highlighted">programowaniem</span></p><img src="/computer1.jpg"></div>
+        </div>
+        <div class="info_holder">
+          <div class="container-fluid box_container"><p>Mam nadzieje ze na studiach naucze sie jak działają <span class="highlighted">komputery</span> i jak <span class="highlighted">programować</span></p><img src="/computers.jpg"></div>
+          <div class="container-fluid box_container"><p>Chcialbym pracowac jako programista, który zajmowałby się <span class="highlighted">backendem</span></p><img src="pexels-element-digital-programmer.jpg"></div>
+        </div>
+        <div class="container-fluid box_container"><p>Moje najwiekse hobby to miedzy innymi <span class="highlighted">programowanie</span>, <span class="highlighted">granie w gry komputerowe</span> i <span class="highlighted">jazda na rowerze</span></p><img src="pexels-element-digital-1293269.jpg"></div>
     </div>
     <div id="section_data" class="container-fluid section">
         <h1><span class="highlighted">Dane:</span></h1>
@@ -220,23 +224,26 @@
                 </div>
                 <a class="btn btn-secondary" href="./MOCK_DATA.json" target="_blank">Pokaz Dane</a>
             </div>
-          </div>
-
-        
+        </div>
+        <div id="data_holder">
+          <div id="control_buttons"></div>
+          <table id="data"></table>
+        </div>
     </div>
     <div id="section_internet" class="container-fluid section">
-        <h1>internet placeholder     display: flex;
-            flex-direction: column;
-            background-color: blueviolet;
-            padding: 25px;
-            flex-grow: 0;</h1>
-            <form action="" class="form-control">
-              <div class="input-group">
-                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                <button type="button" class="btn btn-outline-primary">SEARCH</button>
-              </div>
-            </form>
+        <h1>W sekcji Autor, poza imieniem i nazwiskiem, umieść informacje dotyczące twoich studiów,
+          kierunku na którym studiujesz, co zdecydowało o wyborze właśnie tego kierunku studiów,
+          jakie są twoje oczekiwania dotyczące studiów, dotychczasowe osiągnięcia, plany zawodowe,
+          jakie posiadasz hobby. Możesz użyć zdjęć, rysunków, czy tabel, aby poprawić atrakcyjność tej
+          sekcji.
+        </h1>
+        <form action="" class="form-control">
+          <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary">SEARCH</button>
+          </div>
+        </form>
     </div>
-    <script src="section_controller.js"></script>
+    <script src="nav_controller.js"></script>
 </body>
 </html>
