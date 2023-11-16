@@ -26,6 +26,26 @@ body {
 .selected {
     color: #9645ff;
 }
+div#section_internet form {
+    background-color: transparent;
+    max-width: 500px;
+    border: none;
+}
+div#section_internet form button {
+    border: 1px solid #9645ff;
+    margin-left: 2px;
+    min-width: 150px;
+    color: #9645ff;
+}
+
+div#section_internet form button:hover {
+    background-color: #9645ff;
+    color: white;
+}
+.form-control:focus {
+    border-color: #9645ff;
+    box-shadow: 0 0 0 0.2rem rgba(176, 72, 255, 0.25);
+} 
 nav {
     font-size: 25px;
     max-height: 100px;
