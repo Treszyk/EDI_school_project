@@ -34,10 +34,10 @@
           <div class="container-fluid box_container"><p>Mam nadzieje ze na studiach naucze sie jak działają <span class="highlighted">komputery</span> i jak <span class="highlighted">programować</span></p><img src="./pcomputers.jpg"></div>
           <div class="container-fluid box_container"><p>Chcialbym pracowac jako programista, który zajmowałby się <span class="highlighted">backendem</span></p><img src="./pexels-element-digital-programmer.jpg"></div>
         </div>
-        <div class="container-fluid box_container"><p>Moje najwiekse hobby to miedzy innymi <span class="highlighted">programowanie</span>, <span class="highlighted">granie w gry komputerowe</span> i <span class="highlighted">jazda na rowerze</span></p><img src="./pexels-element-digital-1293269.jpg"></div>
+        <div class="container-fluid box_container"><p>Moje najwieksze hobby to miedzy innymi <span class="highlighted">programowanie</span>, <span class="highlighted">granie w gry komputerowe</span> i <span class="highlighted">pływanie</span></p><img src="./pexels-element-digital-1293269.jpg"></div>
     </div>
     <div id="section_data" class="container-fluid section">
-        <h1><span class="highlighted">Dane:</span></h1>
+        
         <h2>Wygenerowane dane dotycza <span class="highlighted">procesorów</span> i informacji o nich takich jak m.in ich <span class="highlighted">koszt</span>, <span class="highlighted">producent</span>, <span class="highlighted">ilość rdzeni</span>, <span class="highlighted">data premiery</span> czy informacja o <span class="highlighted">przecenie</span>. Struktura danych w tabeli ponizej:</h2>
         <table id="data_structure" class="table table-dark table-bordered dark">
             <tr>
@@ -56,13 +56,13 @@
                 <td>text</td>
                 <td>text</td>
                 <td>text</td>
-                <td>nume</td>
                 <td>numer</td>
                 <td>numer</td>
                 <td>numer</td>
                 <td>kwota w zł</td>
                 <td>data</td>
-                <td>boolean</td>
+                <td>text</td>
+                <td>wartosc logiczna</td>
             </tr>
         </table>
         <h2><span class="highlighted">Dziesięć</span> pierwszych wierszy <span class="highlighted">wygenerowanych</span> danych: </h2>
@@ -231,16 +231,20 @@
         </div>
     </div>
     <div id="section_internet" class="container-fluid section">
-        <h1>W sekcji Autor, poza imieniem i nazwiskiem, umieść informacje dotyczące twoich studiów,
-          kierunku na którym studiujesz, co zdecydowało o wyborze właśnie tego kierunku studiów,
-          jakie są twoje oczekiwania dotyczące studiów, dotychczasowe osiągnięcia, plany zawodowe,
-          jakie posiadasz hobby. Możesz użyć zdjęć, rysunków, czy tabel, aby poprawić atrakcyjność tej
-          sekcji.
+        <h1>Ponizszy formularz pozwala na wyszukiwanie rzeczy w serwisie <span class="highlighted">www.x-kom.pl</span>, mozesz wyszukiwac rzeczy zwiazane z <span class="highlighted">komputerami</span>, takie jak między innymi:
         </h1>
-        <form action="" class="form-control">
+        <div class="info_holder">
+          <div class="container-fluid product_type"><p><span class="highlighted">Procesory</span></p><img src="./processor.jpg"></div>
+          <div class="container-fluid product_type"><p><span class="highlighted">Karty graficzne</span></p><img src="./graphics_card.jpg"></div>
+        </div>
+        <div class="info_holder">
+          <div class="container-fluid product_type"><p><span class="highlighted">Pamięć RAM</span></p><img src="./ram.jpg"></div>
+          <div class="container-fluid product_type"><p><span class="highlighted">Monitory</span></p><img src="./monitors.jpg"></div>
+        </div>
+        <form action="https://www.x-kom.pl/szukaj?q" class="form-control form-control-lg">
           <div class="input-group">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary">SEARCH</button>
+            <input type="search" id="q" name="q" class="form-control form-control-lg rounded" placeholder="Czego szukasz?" aria-label="Czego szukasz?" aria-describedby="search-addon" />
+            <button type="submit" class="btn btn-outline-primary">SZUKAJ</button>
           </div>
         </form>
     </div>

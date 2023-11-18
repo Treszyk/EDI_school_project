@@ -67,14 +67,33 @@ div#section_author {
 }
 div.box_container {
     transition: 0.5s ease-in-out;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 20px;
     color:#a0a0a0;
-    margin: 10px;
+    margin: 25px;
     min-height: 200px;
     max-width: 650px;
     display:flex;
     justify-content: center;
+    align-items: center;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
+}
+div.product_type {
+    transition: 0.5s ease-in-out;
+    border: 1px solid black;
+    padding: 20px;
+    color:#a0a0a0;
+    margin: 25px;
+    display:flex;
+    gap: 50px;
+    min-height: 200px;
+    max-width: 650px;
+    min-width: 650px;
+    font-size: 50px;
+    justify-content: space-between;
     align-items: center;
     width: auto;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
@@ -115,6 +134,36 @@ div.box_container:hover span.highlighted {
     color: #9645ff;
 }
 
+div.product_type p {
+    width: 400px;
+    font-size: 40px;
+}
+div.product_type img {
+    transition: 0.5s ease-in-out;
+    width: 150px;
+    height: 150px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+div.product_type span.highlighted {
+    color: #a0a0a0;
+}
+
+div.product_type:hover img {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+div.product_type:hover {
+    border-color: #9645ff;
+    transform: scale(1.015);
+    color: white;
+}
+div.product_type:hover span.highlighted {
+    color: #9645ff;
+}
 div.section {
     display: flex;
     flex-direction: column;
@@ -142,10 +191,11 @@ div#data_types {
     justify-content: space-between;
     transition:0.5s ease-in-out;
     color: #a0a0a0;
+    border: 1px solid black;
     gap: 10px;
     margin: 10px;
     padding: 10px;
-    border-radius: 25px;
+  
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
 -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
 box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
@@ -155,6 +205,7 @@ box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
 }
 .data_desc:hover {
     transform: scale(1.025);
+    border: 1px solid #9645ff;
 }
 .data_desc:hover a {
     background-color: #9645ff;
@@ -169,6 +220,7 @@ box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
 div#section_internet {
     background-color: #222629;
     color: rgba(255, 255, 255);
+    text-align: center;
     display: none;
 
 }
