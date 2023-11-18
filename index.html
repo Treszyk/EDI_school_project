@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    
+    <title>Patryk Sowiński EDI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav data-bs-theme="dark" class="navbar navbar-expand bg-body-tertiary">
         <div class="container-fluid">
-          <img id="btn_home" class="navbar-brand brand_image_size" src="./1699955733683.png" />
+          <img id="btn_home" class="navbar-brand brand_image_size" src="./photos/1699955733683.png" />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,18 +23,6 @@
           </div>
         </div>
       </nav>
-    <div id="section_author" class="container-fluid section">
-        <h1><span class="highlighted">Patryk Sowiński</span></h1>
-        <div class="info_holder">
-          <div class="container-fluid box_container"><p>Studiuje <span class="highlighted">Informatyke Stosowaną</span> na <span class="highlighted">Uniwersytecie Ekonomicznych w Krakowie</span></p><img src="./UEK.jpg"></div>
-          <div class="container-fluid box_container"><p>O wyborze wlasnie tego kierunku studiow zdecydowalo moje zainteresowanie <span class="highlighted">informatyką</span> i <span class="highlighted">programowaniem</span></p><img src="./pcomputer1.jpg"></div>
-        </div>
-        <div class="info_holder">
-          <div class="container-fluid box_container"><p>Mam nadzieje ze na studiach naucze sie jak działają <span class="highlighted">komputery</span> i jak <span class="highlighted">programować</span></p><img src="./pcomputers.jpg"></div>
-          <div class="container-fluid box_container"><p>Chcialbym pracowac jako programista, który zajmowałby się <span class="highlighted">backendem</span></p><img src="./pexels-element-digital-programmer.jpg"></div>
-        </div>
-        <div class="container-fluid box_container"><p>Moje najwieksze hobby to miedzy innymi <span class="highlighted">programowanie</span>, <span class="highlighted">granie w gry komputerowe</span> i <span class="highlighted">pływanie</span></p><img src="./pexels-element-digital-1293269.jpg"></div>
-    </div>
     <div id="section_data" class="container-fluid section">
         
         <h2>Wygenerowane dane dotycza <span class="highlighted">procesorów</span> i informacji o nich takich jak m.in ich <span class="highlighted">koszt</span>, <span class="highlighted">producent</span>, <span class="highlighted">ilość rdzeni</span>, <span class="highlighted">data premiery</span> czy informacja o <span class="highlighted">przecenie</span>. Struktura danych w tabeli ponizej:</h2>
@@ -208,21 +195,21 @@
                   <h1>CSV</h1>
                   <span>CSV (comma-separated values) jest to typ pliku tekstowego, który zawiera dane rozdzielone seperatorami(bardzo często jest to po prostu przecinek). Pliki o tym rozszerzeniu są często używane do transferu danych z jednego programu do drugiego np. import danych między bazami danych, a arkuszami kalkulacyjnymi w excelu. Dane przechowywane są jako zwykły tekst gdzie każda pojedyńcza linia oznacza kolejny rekord tabeli.</span>
                 </div>
-                <a class="btn btn-secondary" href="./MOCK_DATA.csv" target="_blank">Pokaz Dane</a>
+                <a class="btn btn-secondary" href="./resource_data/MOCK_DATA.csv" target="_blank">Pokaz Dane</a>
               </div>
               <div class="col data_desc">
                 <div>
                   <h1>XML</h1>
                   <span>XML (Extensible Markup Language) jest to format tekstowy, który pozwana na zapisywanie danych w postaci, która jest łatwa do odczytu zarówno przez maszyny jak i przez ludzi. Dokument XML składa się z zagnieżdżonych elementów. Są one zapisywane jako znaczniki. Dzięki swojej dobrze zdefiniowanej strukturze i ogromnym zestawie narzędzi dokumenty XML są bardzo popularne co przekłada się na ich użyteczność np. przy wymianie informacji między programami.</span>
                 </div>
-                <a class="btn btn-secondary" href="./MOCK_DATA.xml" target="_blank">Pokaz Dane</a>
+                <a class="btn btn-secondary" href="./resource_data/MOCK_DATA.xml" target="_blank">Pokaz Dane</a>
               </div>
               <div class="col data_desc">
                 <div>
                   <h1>JSON</h1>
                   <span>JSON (JavaScript Object Notation) to otwarty standardowy format plików do udostępniania danych, który wykorzystuje tekst czytelny dla człowieka do przechowywania i przesyłania danych. Pliki JSON są przechowywane z rozszerzeniem .json. JSON wymaga mniej formatowania i jest dobrą alternatywą dla XML. JSON wywodzi się z języka JavaScript, ale jest formatem danych niezależnym od języka. Generowanie i parsowanie JSON jest obsługiwane przez wiele współczesnych języków programowania.</span>
                 </div>
-                <a class="btn btn-secondary" href="./MOCK_DATA.json" target="_blank">Pokaz Dane</a>
+                <a class="btn btn-secondary" href="./resource_data/MOCK_DATA.json" target="_blank">Pokaz Dane</a>
             </div>
         </div>
         <div id="data_holder">
@@ -230,16 +217,27 @@
           <table id="data"></table>
         </div>
     </div>
-    <div id="section_internet" class="container-fluid section">
-        <h1>Ponizszy formularz pozwala na wyszukiwanie rzeczy w serwisie <span class="highlighted">www.x-kom.pl</span>, mozesz wyszukiwac rzeczy zwiazane z <span class="highlighted">komputerami</span>, takie jak między innymi:
-        </h1>
+    <div id="section_author" class="container-fluid section">
+        <h1><span class="highlighted">Patryk Sowiński</span></h1>
         <div class="info_holder">
-          <div class="container-fluid product_type"><p><span class="highlighted">Procesory</span></p><img src="./processor.jpg"></div>
-          <div class="container-fluid product_type"><p><span class="highlighted">Karty graficzne</span></p><img src="./graphics_card.jpg"></div>
+          <div class="container-fluid box_container"><p>Studiuje <span class="highlighted">Informatyke Stosowaną</span> na <span class="highlighted">Uniwersytecie Ekonomicznych w Krakowie</span></p><img src="./photos/UEK.jpg"></div>
+          <div class="container-fluid box_container"><p>O wyborze wlasnie tego kierunku studiow zdecydowalo moje zainteresowanie <span class="highlighted">informatyką</span> i <span class="highlighted">programowaniem</span></p><img src="./photos/pcomputer1.jpg"></div>
         </div>
         <div class="info_holder">
-          <div class="container-fluid product_type"><p><span class="highlighted">Pamięć RAM</span></p><img src="./ram.jpg"></div>
-          <div class="container-fluid product_type"><p><span class="highlighted">Monitory</span></p><img src="./monitors.jpg"></div>
+          <div class="container-fluid box_container"><p>Mam nadzieje ze na studiach naucze sie jak działają <span class="highlighted">komputery</span> i jak <span class="highlighted">programować</span></p><img src="./photos/pcomputers.jpg"></div>
+          <div class="container-fluid box_container"><p>Chcialbym pracowac jako programista, który zajmowałby się <span class="highlighted">backendem</span></p><img src="./photos/pexels-element-digital-programmer.jpg"></div>
+        </div>
+        <div class="container-fluid box_container"><p>Moje najwieksze hobby to miedzy innymi <span class="highlighted">programowanie</span>, <span class="highlighted">granie w gry komputerowe</span> i <span class="highlighted">pływanie</span></p><img src="./photos/pexels-element-digital-1293269.jpg"></div>
+    </div>
+    <div id="section_internet" class="container-fluid section">
+        <h2>Ponizszy formularz pozwala na wyszukiwanie rzeczy w serwisie <span class="highlighted">www.x-kom.pl</span>, mozesz wyszukiwac rzeczy zwiazane z <span class="highlighted">komputerami</span>, takie jak między innymi:</h2>
+        <div class="info_holder">
+          <div class="container-fluid product_type"><p><span class="highlighted">Procesory</span></p><img src="./photos/processor.jpg"></div>
+          <div class="container-fluid product_type"><p><span class="highlighted">Karty graficzne</span></p><img src="./photos/graphics_card.jpg"></div>
+        </div>
+        <div class="info_holder">
+          <div class="container-fluid product_type"><p><span class="highlighted">Pamięć RAM</span></p><img src="./photos/ram.jpg"></div>
+          <div class="container-fluid product_type"><p><span class="highlighted">Monitory</span></p><img src="./photos/monitors.jpg"></div>
         </div>
         <form action="https://www.x-kom.pl/szukaj?q" class="form-control form-control-lg">
           <div class="input-group">

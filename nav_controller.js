@@ -18,15 +18,14 @@ const hide_sections = () => {
 
 const unselect_buttons = () => {
     buttons.forEach(element => {
-        //element.style.setProperty('color', 'rgba(255, 255, 255, 0.55)');
         element.classList.remove('selected');
     });
 }
+
 const nav_btn_clicked = (element_to_show, clicked_button) => {
     hide_sections();
     unselect_buttons();
     element_to_show.style.setProperty('display', 'flex');
-    //event.target.style.setProperty('color', '#9645ff');
     clicked_button.classList.add('selected');
 }
 
@@ -35,7 +34,6 @@ btn_img_home.addEventListener('click', () => {
 })
 btn_data.addEventListener('click', (event) => {
     console.log(data_section);
-    //console.log('color: ', window.getComputedStyle(btn_author).getPropertyValue('color'));
     nav_btn_clicked(data_section, event.target);
 });
 btn_author.addEventListener('click', (event) => {
@@ -44,11 +42,3 @@ btn_author.addEventListener('click', (event) => {
 btn_internet.addEventListener('click', (event) => {
     nav_btn_clicked(internet_section, event.target);
 });
-
-
-
-//data_section.style.setProperty('display', 'none');
-
-console.log(author_section);
-console.log(data_section);
-console.log(internet_section);
